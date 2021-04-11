@@ -21,7 +21,7 @@ class Brand(db.Model):
     name = db.Column(db.String(50), nullable=False)
     founded = db.Column(db.Integer)
     headquarters = db.Column(db.String(50))
-    discountinued = db.Column(db.Integer)
+    discontinued = db.Column(db.Integer)
 
     def __repr__(self):
         """Provides output when printing."""
@@ -44,7 +44,7 @@ class Model(db.Model):
     def __repr__(self):
         """Provides output when printing."""
 
-        return f"<Model: name={self.name}, model_id: model_id={self.model_id}, model year: year={self.year}>"
+        return f"<Model: name={self.name}, model_id: model_id={self.model_id}, model year: yearr={self.year}>"
 
 # End Part 1
 
