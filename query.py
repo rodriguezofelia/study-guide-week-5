@@ -32,6 +32,10 @@ init_app()
 # relationship (many to one, many to many, one to one, etc.) does an
 # association table manage?
 
+# An association table manages a many to many relationship. 
+# An association table acts like the middleperson among tables. It 
+# will hold two foreign key - one from each table's primary key. 
+
 
 
 
