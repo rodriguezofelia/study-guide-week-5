@@ -44,7 +44,7 @@ class Model(db.Model):
     def __repr__(self):
         """Provides output when printing."""
 
-        return f"<Model: name={self.name}, model_id: model_id={self.model_id}, model year: yearr={self.year}>"
+        return f"<Model: name={self.name}, model_id: model_id={self.model_id}, model year: year={self.year}>"
 
 # End Part 1
 
