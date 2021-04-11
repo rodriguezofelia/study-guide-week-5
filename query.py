@@ -23,6 +23,9 @@ init_app()
 # 1. What is the datatype of the returned value of
 # ``Brand.query.filter_by(name='Ford')``?
 
+# This is a query object that will return '<class 'flask_sqlalchemy.BaseQuery'>'.
+# In order to return something, you would have to attach .all(), .one(), etc at
+# the end of the query. 
 
 
 # 2. In your own words, what is an association table, and what type of
