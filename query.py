@@ -44,7 +44,7 @@ q2 = Model.query.filter_by(name = "Corvette", brand_id = "che").all()
 q2_alt = Model.query.filter(Model.name="Corvette", Model.brand_id == "che").all()
 
 # Get all models that are older than 1960.
-q3 = None
+q3 = Model.query.filter(Model.year < 1960).all()
 
 # Get all brands that were founded after 1920.
 q4 = None
