@@ -53,7 +53,8 @@ q4 = Brand.query.filter(Brand.founded > 1920).all()
 q5 = Model.query.filter(Model.name.like('%Cor%')).all()
 
 # Get all brands that were founded in 1903 and that are not yet discontinued.
-q6 = None
+q6 = Brand.query.filter((Brand.founded == 1903) & (Brand.discontinued == None)).all() 
+q6_alt = Brand.query.filter(Brand.founded == 1903, Brand.discontinued.is_(None)).all()
 
 # Get all brands that are either 1) discontinued (at any time) or 2) founded
 # before 1950.
