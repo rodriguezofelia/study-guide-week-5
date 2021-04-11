@@ -58,7 +58,7 @@ q6_alt = Brand.query.filter(Brand.founded == 1903, Brand.discontinued.is_(None))
 
 # Get all brands that are either 1) discontinued (at any time) or 2) founded
 # before 1950.
-q7 = None
+q7 = Brand.query.filter((Brand.discontinued != None) | (Brand.founded < 1950)).all()
 
 # Get all models whose brand_id is not ``for``.
 q8 = None
