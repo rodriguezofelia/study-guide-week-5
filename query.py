@@ -37,7 +37,7 @@ init_app()
 
 
 # Get the brand with the brand_id of ``ram``.
-q1 = None
+q1 = Brand.query.get("ram")
 
 # Get all models with the name ``Corvette`` and the brand_id ``che``.
 q2 = None
